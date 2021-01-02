@@ -1,0 +1,19 @@
+{
+  "name": "valladiermagali_3_30122020",
+  "version": "1.0.0",
+  "description": "projet3",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magali-valladier/MagaliValladier_3_30122020.git"
+  },
+  "author": "magali valladier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/magali-valladier/MagaliValladier_3_30122020/issues"
+  },
+  "homepage": "https://github.com/magali-valladier/MagaliValladier_3_30122020#readme"
+}
