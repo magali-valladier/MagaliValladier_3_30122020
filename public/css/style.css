@@ -1,7 +1,32 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Shrikand, Roboto, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  font-family: Shrikhand, Roboto, sans-serif;
+}
+
+.main-header h1 {
+  text-align: center;
+}
+
+.main-footer {
+  background: #353535;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
