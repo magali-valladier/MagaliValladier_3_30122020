@@ -71,6 +71,10 @@ body, html {
   padding: 0 10px;
 }
 
+.restaurant-title {
+  padding-left: 10px;
+}
+
 .maps {
   background: #eaeaea;
   display: flex;
