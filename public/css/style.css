@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 * {
@@ -22,7 +23,6 @@ h1, h6 {
 
 body, html {
   font-family: "Roboto", sans-serif;
-  color: #000;
 }
 
 .main-header h1 {
@@ -32,6 +32,34 @@ body, html {
 .main-footer {
   background: #353535;
   color: white;
+}
+
+.about {
+  background: #f6f6f6;
+  text-align: center;
+}
+.about__h2 {
+  font-weight: bold;
+}
+.about__p {
+  color: #4d4d4d;
+}
+
+.maps {
+  background: #eaeaea;
+}
+
+.maps-search {
+  width: 100%;
+  box-shadow: 10px;
+}
+
+.maps-search input {
+  border: none;
+  height: 2rem;
+  background: #eaeaea;
+  font-size: 1rem;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

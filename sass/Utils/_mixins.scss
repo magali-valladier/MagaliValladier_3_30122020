@@ -1,0 +1,17 @@
+@mixin maps {
+    border: none;
+    height: 2rem;
+    background: #eaeaea;
+    font-size: 1rem;
+    text-align: center;
+}
+@mixin about {
+    background: #f6f6f6;
+    text-align: center;
+    &__h2 {
+        font-weight: bold;
+    }
+    &__p {
+        color: #4d4d4d;
+    }
+}

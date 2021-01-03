@@ -1,5 +1,6 @@
 @import "./Base/reset", "./Base/typo";
-@import "./Utils/variables";
-@import "./Layout/header", "./Layout/footer";
+@import "./Utils/variables", "./Utils/mixins";
+@import "./Layout/header", "./Layout/footer", "./Layout/about";
+@import "./Components/maps";
 
    

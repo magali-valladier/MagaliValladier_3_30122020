@@ -1,0 +1,10 @@
+.maps {
+    background: #eaeaea;
+}
+.maps-search {
+    width: 100%;
+    box-shadow: 10px;
+}
+.maps-search input{
+    @include maps;
+}
