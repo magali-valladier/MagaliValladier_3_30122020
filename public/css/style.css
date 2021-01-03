@@ -47,19 +47,30 @@ body, html {
 
 .maps {
   background: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .maps-search {
-  width: 100%;
   box-shadow: 10px;
 }
 
 .maps-search input {
   border: none;
-  height: 2rem;
   background: #eaeaea;
   font-size: 1rem;
-  text-align: center;
+  padding: 30px 0 30px 10px;
+}
+
+.btn-about button {
+  background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  border: 1px solid transparent;
+  border-radius: 30px;
+  padding: 10px 5px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

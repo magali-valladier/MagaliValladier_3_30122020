@@ -1,8 +1,10 @@
 .maps {
     background: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .maps-search {
-    width: 100%;
     box-shadow: 10px;
 }
 .maps-search input{
