@@ -1,0 +1,10 @@
+.howto-title {
+    padding-left: 10px;
+}
+.number {
+    @include howto-number;
+}
+.howto-icon i {
+    color: #7e7e7e7e;
+    padding: 0 10px;
+}

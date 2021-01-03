@@ -1,6 +1,6 @@
 @import "./Base/reset", "./Base/typo";
-@import "./Utils/variables", "./Utils/mixins";
-@import "./Layout/header", "./Layout/footer", "./Layout/about";
-@import "./Components/maps", "./Components/btn-about";
+@import "./Utils/variables", "./Utils/mixins", "./Utils/functions";
+@import "./Layout/header", "./Layout/footer", "./Layout/about", "./Layout/howto";
+@import "./Components/maps", "./Components/btn-about", "./Components/howto-btn";
 
    

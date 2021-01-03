@@ -1,3 +1,7 @@
 .btn-about button{
     @include btn-about;
+    &:hover {
+        opacity: 0.9;
+    }
+
 }
