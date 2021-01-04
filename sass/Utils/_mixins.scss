@@ -4,6 +4,7 @@
     font-size: 1rem;
     padding: 20px 5px 20px 5px;
     margin-top: 5px;
+    text-align: center;
 }
 @mixin about {
     background: #f6f6f6;
@@ -35,10 +36,11 @@
     margin: 3px;
     text-align: center;
     height: 100%;
+    position: relative;
+    float: left;
 }
 @mixin howto-btn {
-    padding-left: 10px;
-    margin-bottom: 10px;
+    margin: 0 20px 20px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,4 +49,35 @@
     border-radius: 10px;
     box-shadow: 4px 4px 6px #fff;
     font-weight: bold;
+    box-shadow: 4px 4px 6px #e9e9e9;
+}
+@mixin btn-card {
+    color: #56baa2;
+    background: $color-tertiary;
+    border: 5px solid $color-tertiary;
+    border-radius: 5px;
+    position: absolute;
+    right: 1%;
+    top: 5%;
+}
+@mixin card {
+    border-radius: 25px;
+    box-shadow: 4px 4px 6px #aaa;
+    margin: 20px;
+    position: relative;
+}
+@mixin card-img {
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 100%;
+    height: 100%;
+    max-height: 250px;
+    }
+@mixin card-figure {
+    margin: 0;
+ }
+@mixin card-figcaption {
+    margin: 0;
+    padding: 10px;
 }
