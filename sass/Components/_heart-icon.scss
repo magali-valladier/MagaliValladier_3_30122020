@@ -1,8 +1,14 @@
-.heart-icon {
-    width: 25px;
-    height: 25px;
-    &:hover {
-        transition: all 0.3s linear 0s;
-        background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-    }
+.fa-heart {
+    color: black;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 2em;
+}
+.fa-heart::before {
+    content: "\f004";
+    font-weight: bold;
+    transition: color 1s ease-out;
+}
+.fa-heart:hover{
+    color: $linear-gradient;
 }
