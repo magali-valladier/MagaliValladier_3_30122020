@@ -10,25 +10,22 @@
     z-index: 9999;
     top: 0;
     left: 0;
-    
+    pointer-events: none;
+    animation: loader 1s ease-in-out 3s forwards;
     }
     .loader-food{
         vertical-align: middle;
         position: absolute;
         top:50%;
         left: 25%;
-        animation-fill-mode: forwards;
-        animation-duration: 3000ms;
-     }
+    }
 
     .loader-food span{
     display: inline-block;
     width: 5px;
     height: 20px;
     padding-right: 1em;
-    animation-fill-mode: forwards;
-        animation-duration: 3000ms;
-}
+   }
   
   .loader-food span:nth-child(1){
     animation: grow 1s ease-in-out infinite;
@@ -76,5 +73,16 @@
     }
     to{
         -webkit-transform: rotate(360deg);
+    }
+}
+@keyframes loader {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
     }
 }
