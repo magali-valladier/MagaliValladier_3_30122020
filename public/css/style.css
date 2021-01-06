@@ -45,10 +45,10 @@ body, html {
   width: 100%;
   padding: 40px 0;
 }
-.about__h2 {
+.about h2 {
   font-weight: bold;
 }
-.about__p {
+.about p {
   color: #4d4d4d;
 }
 
@@ -119,6 +119,56 @@ body, html {
   font-size: 1.5rem;
 }
 
+.loader {
+  background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  width: 100%;
+  height: 100%;
+  line-height: 100%;
+  font-family: Shrikhand, sans-serif;
+  vertical-align: middle;
+  text-align: center;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+}
+
+.loader-food {
+  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+}
+
+.loader-food span {
+  display: inline-block;
+  width: 5px;
+  height: 20px;
+  padding-right: 1em;
+}
+
+.loader-food span:nth-child(1) {
+  animation: grow 1s ease-in-out infinite;
+}
+
+.loader-food span:nth-child(2) {
+  animation: grow 1s ease-in-out 0.15s infinite;
+}
+
+.loader-food span:nth-child(3) {
+  animation: grow 1s ease-in-out 0.15s infinite;
+}
+
+@keyframes grow {
+  0%, 100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+  50% {
+    -webkit-transform: scaleY(1.8);
+    transform: scaleY(1.8);
+  }
+}
 .maps {
   background: #eaeaea;
   display: flex;
@@ -147,6 +197,7 @@ body, html {
   padding: 10px 5px;
   color: #fff;
   font-weight: bold;
+  box-shadow: 4px 4px 6px #aaa;
   cursor: pointer;
 }
 .btn-about button:hover {
@@ -177,20 +228,17 @@ body, html {
 }
 
 .fa-heart {
-  color: black;
-  background-color: #fff;
+  background: #fff;
+  color: #000;
   border-radius: 50%;
-  padding: 2em;
+  position: relative;
+  overflow: hidden;
 }
 
-.fa-heart::before {
-  content: "";
-  font-weight: bold;
-  transition: color 1s ease-out;
-}
-
-.fa-heart:hover {
-  color: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+.fa-heart:after {
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
 }
 
 /*# sourceMappingURL=style.css.map */

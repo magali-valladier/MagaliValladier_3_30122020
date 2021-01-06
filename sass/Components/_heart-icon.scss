@@ -1,14 +1,16 @@
 .fa-heart {
-    color: black;
-    background-color: #fff;
+    background: #fff;
+    color: #000;
     border-radius: 50%;
-    padding: 2em;
+    position: relative;
+    overflow: hidden;
 }
-.fa-heart::before {
-    content: "\f004";
-    font-weight: bold;
-    transition: color 1s ease-out;
+.fa-heart:after {
+    content: "";
+    position: absolute;
+    background-image: $linear-gradient;
+    
 }
-.fa-heart:hover{
-    color: $linear-gradient;
-}
+
+
+
