@@ -138,6 +138,8 @@ body, html {
   position: absolute;
   top: 50%;
   left: 25%;
+  animation-fill-mode: forwards;
+  animation-duration: 3000ms;
 }
 
 .loader-food span {
@@ -145,6 +147,8 @@ body, html {
   width: 5px;
   height: 20px;
   padding-right: 1em;
+  animation-fill-mode: forwards;
+  animation-duration: 3000ms;
 }
 
 .loader-food span:nth-child(1) {
@@ -159,6 +163,30 @@ body, html {
   animation: grow 1s ease-in-out 0.15s infinite;
 }
 
+.loader-food span:nth-child(4) {
+  animation: grow 1s ease-in-out 0.15s infinite;
+}
+
+.loader-food span:nth-child(5) {
+  animation: grow 1s ease-in-out 0.15s infinite;
+}
+
+.loader-food span:nth-child(6) {
+  animation: grow 1s ease-in-out 0.15s infinite;
+}
+
+.loader-food span:nth-child(7) {
+  animation: grow 1s ease-in-out 0.15s infinite;
+}
+
+.loader-food span:nth-child(8) {
+  animation: grow 1s ease-in-out 0.15s infinite;
+}
+
+.loader-food span:nth-child(9) {
+  animation: rotate 1s linear infinite;
+}
+
 @keyframes grow {
   0%, 100% {
     -webkit-transform: scaleY(1);
@@ -167,6 +195,14 @@ body, html {
   50% {
     -webkit-transform: scaleY(1.8);
     transform: scaleY(1.8);
+  }
+}
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
   }
 }
 .maps {
