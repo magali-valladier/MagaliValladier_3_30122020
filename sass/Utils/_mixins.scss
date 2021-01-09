@@ -5,26 +5,22 @@
     padding: 20px 5px 20px 5px;
     margin-top: 5px;
     text-align: center;
+    width: 150px;
 }
 @mixin about {
     background: #f6f6f6;
     text-align: center;
     width: 100%;
     padding: 40px 0;
-    &__h2 {
-        font-weight: bold;
-    }
-    &__p {
-        color: #4d4d4d;
-    }
 }
 @mixin btn-about {
-    background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+    background-image: $linear-gradient;
     border: 1px solid transparent;
     border-radius: 30px;
     padding: 10px 5px;
     color: #fff;
     font-weight: bold;
+    box-shadow: 4px 4px 6px #aaa;
     cursor: pointer;
    }
 @mixin howto-number {
@@ -65,6 +61,7 @@
     box-shadow: 4px 4px 6px #aaa;
     margin: 20px;
     position: relative;
+    background: #fff;
 }
 @mixin card-img {
     object-fit: cover;
@@ -76,8 +73,36 @@
     }
 @mixin card-figure {
     margin: 0;
+    
  }
 @mixin card-figcaption {
     margin: 0;
     padding: 10px;
+}
+@mixin menu-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 80px;
+}
+@mixin main-menu {
+    background-color: #f6f6f6;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 100%;
+}
+@mixin menu-title {
+    font-family: Shrikhand, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+@mixin meals {
+    background-color: #fff;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 4px 4px 6px #aaa;
+
 }
