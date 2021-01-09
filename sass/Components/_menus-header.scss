@@ -2,8 +2,8 @@
     object-fit: cover;
     width: 100%;
 }
-.heart {
-    @include heart;
+.menu-title {
+    @include menu-title;
 }
 .meals {
     @include meals;
@@ -12,13 +12,28 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+    line-height: 1.5em;
+ }
+ .last-line p {
+     margin: 0;
+ }
 .meals h4 {
     margin: 0;
  }
  .menu h3 {
     padding-left: 10px;
-
+    text-transform: uppercase;
+    border-bottom: 2px solid $color-tertiary;
+ }
+ .btn-order button {
+     @include btn-about;
+     margin: 30px 0;
+    padding: 20px;
+    width: 50%;
+ }
+ .btn-order {
+     display: flex;
+     justify-content: center;
  }
  
  
