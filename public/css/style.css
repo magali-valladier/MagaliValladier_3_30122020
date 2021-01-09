@@ -199,6 +199,7 @@ body, html {
   left: 0;
   pointer-events: none;
   animation: loader 1s ease-in-out 3s forwards;
+  display: none;
 }
 
 .loader-food {
@@ -251,6 +252,20 @@ body, html {
   animation: rotate 1s linear infinite;
 }
 
+.menu-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-right: 80px;
+}
+
+.main-menu {
+  background-color: #f6f6f6;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  width: 100%;
+}
+
 .maps {
   background: #eaeaea;
   display: flex;
@@ -270,6 +285,7 @@ body, html {
   padding: 20px 5px 20px 5px;
   margin-top: 5px;
   text-align: center;
+  width: 150px;
 }
 
 .btn-about button {
@@ -309,18 +325,38 @@ body, html {
   top: 5%;
 }
 
-.fa-heart {
-  background: #fff;
-  color: #000;
-  border-radius: 50%;
-  position: relative;
-  overflow: hidden;
+.header-img img {
+  object-fit: cover;
+  width: 100%;
 }
 
-.fa-heart:after {
-  content: "";
-  position: absolute;
-  background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+.heart {
+  font-family: Shrikhand, sans-serif;
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.meals {
+  background-color: #fff;
+  border-radius: 15px;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 4px 4px 6px #aaa;
+}
+
+.last-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.meals h4 {
+  margin: 0;
+}
+
+.menu h3 {
+  padding-left: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

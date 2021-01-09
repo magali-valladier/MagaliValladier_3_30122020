@@ -1,0 +1,24 @@
+.header-img img{
+    object-fit: cover;
+    width: 100%;
+}
+.heart {
+    @include heart;
+}
+.meals {
+    @include meals;
+}
+.last-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.meals h4 {
+    margin: 0;
+ }
+ .menu h3 {
+    padding-left: 10px;
+
+ }
+ 
+ 
