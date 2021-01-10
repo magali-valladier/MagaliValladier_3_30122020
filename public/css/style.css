@@ -123,21 +123,22 @@ body, html {
 }
 
 .number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #9356DC;
-  width: 20px;
-  height: 20px;
-  border-radius: 10px;
   color: #fff;
-  margin: 3px;
-  text-align: center;
-  height: 100%;
+  border-radius: 50%;
+  border: 2px solid #9356DC;
+  width: 25px;
+  height: 25px;
   position: relative;
-  float: left;
+  right: 10px;
 }
 
 .howto-icon i {
-  color: #7e7e7e7e;
-  padding: 0 10px;
+  color: #b2b2b2;
+  margin: 0 30px;
 }
 
 .restaurant-title h3 {
@@ -300,12 +301,13 @@ body, html {
 }
 .btn-about button:hover {
   opacity: 0.9;
+  box-shadow: 4px 4px 6px #000;
 }
 
 .howto-button {
   margin: 0 20px 20px 20px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   background: #f6f6f6;
   border: 5px solid #f6f6f6;
@@ -379,6 +381,10 @@ body, html {
   margin: 30px 0;
   padding: 20px;
   width: 50%;
+}
+.btn-order button:hover {
+  opacity: 0.9;
+  box-shadow: 4px 4px 6px #000;
 }
 
 .btn-order {

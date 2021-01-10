@@ -2,6 +2,6 @@
     @include btn-about;
     &:hover {
         opacity: 0.9;
+        box-shadow: 4px 4px 6px #000;
     }
-
 }
