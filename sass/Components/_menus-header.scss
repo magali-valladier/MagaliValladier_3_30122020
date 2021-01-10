@@ -1,8 +1,15 @@
 .header-img img{
     object-fit: cover;
     width: 100%;
-}
-.menu-title {
+ }
+ .menu-header {
+     @include menu-header;
+ }
+ .arrow {
+    margin-left: 10px;
+    padding-right: 60px;
+ }
+ .menu-title {
     @include menu-title;
 }
 .meals {
@@ -23,7 +30,7 @@
  .starter h3, .dish h3, .dessert h3 {
     padding-left: 10px;
     text-transform: uppercase;
-    border-bottom: 2px solid $color-tertiary;
+    margin-bottom: 5px;
  }
  .btn-order button {
      @include btn-about;

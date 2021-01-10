@@ -1,15 +1,25 @@
-.menu-header {
-    @include menu-header;
-}
+
 .main-menu {
     @include main-menu;
 }
 .starter {
-    animation: fadein 3s;
+    animation: fadein 3s ease-in-out;
 }
 .dish {
-    animation: fadein 6s;
+    animation: fadein 6s ease-in-out;
 }
 .dessert {
-    animation: fadein 9s;
+    animation: fadein 9s ease-in-out;
+}
+.cross {
+    @include cross;
+}
+.cross i {
+    color: #fff;
+    transform: rotate(360deg);
+}
+.line {
+    width: 40px;
+    border: 2px solid $color-tertiary;
+    margin-left: 10px;
 }

@@ -265,13 +265,6 @@ body, html {
   animation: grow 1s ease-in-out 0.15s infinite;
 }
 
-.menu-header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding-right: 80px;
-}
-
 .main-menu {
   background-color: #f6f6f6;
   border-top-left-radius: 25px;
@@ -280,15 +273,41 @@ body, html {
 }
 
 .starter {
-  animation: fadein 3s;
+  animation: fadein 3s ease-in-out;
 }
 
 .dish {
-  animation: fadein 6s;
+  animation: fadein 6s ease-in-out;
 }
 
 .dessert {
-  animation: fadein 9s;
+  animation: fadein 9s ease-in-out;
+}
+
+.cross {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  width: 30px;
+  height: 63px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position: absolute;
+  padding: 20px;
+  right: 0;
+  top: 0;
+}
+
+.cross i {
+  color: #fff;
+  transform: rotate(360deg);
+}
+
+.line {
+  width: 40px;
+  border: 2px solid #99E2D0;
+  margin-left: 10px;
 }
 
 .maps {
@@ -342,7 +361,7 @@ body, html {
 }
 
 .new {
-  color: #56baa2;
+  color: #008766;
   background: #99E2D0;
   border: 5px solid #99E2D0;
   border-radius: 5px;
@@ -354,6 +373,16 @@ body, html {
 .header-img img {
   object-fit: cover;
   width: 100%;
+}
+
+.menu-header {
+  display: flex;
+  align-items: center;
+}
+
+.arrow {
+  margin-left: 10px;
+  padding-right: 60px;
 }
 
 .menu-title {
@@ -370,6 +399,8 @@ body, html {
   margin: 10px;
   padding: 10px;
   box-shadow: 4px 4px 6px #aaa;
+  position: relative;
+  cursor: pointer;
 }
 
 .last-line {
@@ -390,7 +421,7 @@ body, html {
 .starter h3, .dish h3, .dessert h3 {
   padding-left: 10px;
   text-transform: uppercase;
-  border-bottom: 2px solid #99E2D0;
+  margin-bottom: 5px;
 }
 
 .btn-order button {
