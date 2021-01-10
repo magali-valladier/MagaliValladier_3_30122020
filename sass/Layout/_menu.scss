@@ -4,3 +4,12 @@
 .main-menu {
     @include main-menu;
 }
+.starter {
+    animation: fadein 3s;
+}
+.dish {
+    animation: fadein 6s;
+}
+.dessert {
+    animation: fadein 9s;
+}
