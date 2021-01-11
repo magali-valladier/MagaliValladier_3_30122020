@@ -122,3 +122,10 @@
     right: 0;
     top: 0;
 }
+@mixin med-screen {
+    @media screen and (min-width: map-get($breakpoints, tablet)){
+        width: 350px;
+        margin: 0;
+        
+    }
+}

@@ -172,6 +172,8 @@ body, html {
 
 .main-restaurant {
   background: #f2f2f2;
+  display: flex;
+  flex-direction: column;
 }
 
 .heart {
