@@ -63,6 +63,14 @@ body, html {
     opacity: 0;
   }
 }
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .main-header h1 {
   text-align: center;
 }
@@ -123,21 +131,22 @@ body, html {
 }
 
 .number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #9356DC;
-  width: 20px;
-  height: 20px;
-  border-radius: 10px;
   color: #fff;
-  margin: 3px;
-  text-align: center;
-  height: 100%;
+  border-radius: 50%;
+  border: 2px solid #9356DC;
+  width: 25px;
+  height: 25px;
   position: relative;
-  float: left;
+  right: 10px;
 }
 
 .howto-icon i {
-  color: #7e7e7e7e;
-  padding: 0 10px;
+  color: #b2b2b2;
+  margin: 0 30px;
 }
 
 .restaurant-title h3 {
@@ -163,6 +172,8 @@ body, html {
 
 .main-restaurant {
   background: #f2f2f2;
+  display: flex;
+  flex-direction: column;
 }
 
 .heart {
@@ -186,11 +197,12 @@ body, html {
 }
 
 .loader {
-  background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background: -webkit-linear-gradient(#FFFFFF, #99E2D0, #FF79DA, #9356DC);
   width: 100%;
   height: 100%;
   line-height: 100%;
   font-family: Shrikhand, sans-serif;
+  font-size: x-large;
   vertical-align: middle;
   text-align: center;
   position: fixed;
@@ -199,13 +211,12 @@ body, html {
   left: 0;
   pointer-events: none;
   animation: loader 1s ease-in-out 3s forwards;
-  display: none;
 }
 
 .loader-food {
   vertical-align: middle;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 25%;
 }
 
@@ -214,6 +225,14 @@ body, html {
   width: 5px;
   height: 20px;
   padding-right: 1em;
+}
+
+.loader-fork {
+  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  animation: rotate 1s linear infinite;
 }
 
 .loader-food span:nth-child(1) {
@@ -248,22 +267,49 @@ body, html {
   animation: grow 1s ease-in-out 0.15s infinite;
 }
 
-.loader-food span:nth-child(9) {
-  animation: rotate 1s linear infinite;
-}
-
-.menu-header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding-right: 80px;
-}
-
 .main-menu {
   background-color: #f6f6f6;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   width: 100%;
+}
+
+.starter {
+  animation: fadein 3s ease-in-out;
+}
+
+.dish {
+  animation: fadein 6s ease-in-out;
+}
+
+.dessert {
+  animation: fadein 9s ease-in-out;
+}
+
+.cross {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  width: 30px;
+  height: 63px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position: absolute;
+  padding: 20px;
+  right: 0;
+  top: 0;
+}
+
+.cross i {
+  color: #fff;
+  transform: rotate(360deg);
+}
+
+.line {
+  width: 40px;
+  border: 2px solid #99E2D0;
+  margin-left: 10px;
 }
 
 .maps {
@@ -300,12 +346,13 @@ body, html {
 }
 .btn-about button:hover {
   opacity: 0.9;
+  box-shadow: 4px 4px 6px #000;
 }
 
 .howto-button {
   margin: 0 20px 20px 20px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   background: #f6f6f6;
   border: 5px solid #f6f6f6;
@@ -316,7 +363,7 @@ body, html {
 }
 
 .new {
-  color: #56baa2;
+  color: #008766;
   background: #99E2D0;
   border: 5px solid #99E2D0;
   border-radius: 5px;
@@ -328,6 +375,16 @@ body, html {
 .header-img img {
   object-fit: cover;
   width: 100%;
+}
+
+.menu-header {
+  display: flex;
+  align-items: center;
+}
+
+.arrow {
+  margin-left: 10px;
+  padding-right: 60px;
 }
 
 .menu-title {
@@ -344,6 +401,8 @@ body, html {
   margin: 10px;
   padding: 10px;
   box-shadow: 4px 4px 6px #aaa;
+  position: relative;
+  cursor: pointer;
 }
 
 .last-line {
@@ -361,10 +420,10 @@ body, html {
   margin: 0;
 }
 
-.menu h3 {
+.starter h3, .dish h3, .dessert h3 {
   padding-left: 10px;
   text-transform: uppercase;
-  border-bottom: 2px solid #99E2D0;
+  margin-bottom: 5px;
 }
 
 .btn-order button {
@@ -379,6 +438,10 @@ body, html {
   margin: 30px 0;
   padding: 20px;
   width: 50%;
+}
+.btn-order button:hover {
+  opacity: 0.9;
+  box-shadow: 4px 4px 6px #000;
 }
 
 .btn-order {
