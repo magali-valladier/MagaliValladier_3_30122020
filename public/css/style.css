@@ -71,6 +71,23 @@ body, html {
     opacity: 1;
   }
 }
+@keyframes fill {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .main-header h1 {
   text-align: center;
 }
@@ -211,6 +228,7 @@ body, html {
   left: 0;
   pointer-events: none;
   animation: loader 1s ease-in-out 3s forwards;
+  display: none;
 }
 
 .loader-food {
@@ -299,6 +317,11 @@ body, html {
   padding: 20px;
   right: 0;
   top: 0;
+  visibility: hidden;
+}
+.cross:hover {
+  transform: translate(-10px);
+  visibility: visible;
 }
 
 .cross i {
@@ -370,6 +393,27 @@ body, html {
   position: absolute;
   right: 1%;
   top: 5%;
+}
+
+.fill-heart {
+  transition: transform 200ms linear;
+}
+
+.fill {
+  color: black;
+  cursor: pointer;
+  transition: all 0.2ms linear;
+}
+.fill:hover {
+  animation: fill 200ms ease-in;
+  display: inline-block;
+  opacity: 1;
+  background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }
 
 .header-img img {

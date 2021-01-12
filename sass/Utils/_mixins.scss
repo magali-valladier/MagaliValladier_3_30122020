@@ -121,7 +121,8 @@
     padding: 20px;
     right: 0;
     top: 0;
-}
+    visibility: hidden;
+    }
 @mixin med-screen {
     @media screen and (min-width: map-get($breakpoints, tablet)){
         width: 350px;
