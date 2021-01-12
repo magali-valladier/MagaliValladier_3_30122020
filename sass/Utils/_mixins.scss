@@ -83,7 +83,7 @@
 }
 @mixin menu-header {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 @mixin main-menu {

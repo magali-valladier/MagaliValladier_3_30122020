@@ -7,8 +7,8 @@
      @include menu-header;
  }
  .arrow {
-    margin-left: 10px;
-    padding-right: 60px;
+    position: absolute;
+    left: 20px;
  }
  .menu-title {
     @include menu-title;
