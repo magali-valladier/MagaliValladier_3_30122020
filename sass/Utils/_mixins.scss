@@ -83,6 +83,7 @@
 }
 @mixin menu-header {
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 @mixin main-menu {
@@ -90,6 +91,8 @@
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     width: 100%;
+    position: relative;
+    margin-top: -50px;
   }
 @mixin menu-title {
     font-family: Shrikhand, sans-serif;
@@ -121,7 +124,8 @@
     padding: 20px;
     right: 0;
     top: 0;
-}
+    visibility: hidden;
+    }
 @mixin med-screen {
     @media screen and (min-width: map-get($breakpoints, tablet)){
         width: 350px;
