@@ -13,15 +13,7 @@
 }
 .cross {
     @include cross;
-    &:hover {
-        transform: translate(-10px);
-        visibility: visible;
-    }
-}
-.cross i {
-    color: #fff;
-    transform: rotate(360deg);
-}
+ }
 .line {
     width: 40px;
     border: 2px solid $color-tertiary;

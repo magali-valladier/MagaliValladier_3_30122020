@@ -73,19 +73,20 @@ body, html {
 }
 @keyframes fill {
   0% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 0.7;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  75% {
-    opacity: 0.2;
+    opacity: 0;
   }
   100% {
-    opacity: 0;
+    opacity: 1;
+  }
+}
+@keyframes cross {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 .main-header h1 {
@@ -311,24 +312,19 @@ body, html {
   justify-content: center;
   align-items: center;
   background-color: #99E2D0;
-  width: 30px;
+  width: 60px;
   height: 63px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   position: absolute;
   padding: 20px;
-  right: 0;
+  right: -50px;
   top: 0;
-  visibility: hidden;
+  opacity: 0;
+  transition: transform 330ms ease-in-out;
 }
-.cross:hover {
-  transform: translate(-10px);
-  visibility: visible;
-}
-
-.cross i {
+.cross .fa-check-circle {
   color: #fff;
-  transform: rotate(360deg);
 }
 
 .line {
@@ -407,7 +403,7 @@ body, html {
   transition: all 0.2ms linear;
 }
 .fill:hover {
-  animation: fill 200ms ease-in;
+  animation: fill 1.2s ease-in-out;
   display: inline-block;
   opacity: 1;
   background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
@@ -426,13 +422,13 @@ body, html {
 
 .menu-header {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
 .arrow {
-  margin-left: 10px;
-  padding-right: 60px;
+  position: absolute;
+  left: 20px;
 }
 
 .menu-title {
@@ -452,6 +448,13 @@ body, html {
   position: relative;
   cursor: pointer;
 }
+.meals:hover {
+  padding-right: 70px;
+}
+.meals:hover .cross {
+  opacity: 1;
+  transform: translate(-50px);
+}
 
 .last-line {
   display: flex;
@@ -463,9 +466,19 @@ body, html {
 .last-line p {
   margin: 0;
 }
+.last-line p:hover {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: inline-block;
+}
 
 .meals h4 {
   margin: 0;
+}
+
+.cross i {
+  animation: cross 0.4s ease-in 1.5s both;
 }
 
 .starter h3, .dish h3, .dessert h3 {

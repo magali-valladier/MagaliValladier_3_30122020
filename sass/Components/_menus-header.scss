@@ -7,8 +7,8 @@
      @include menu-header;
  }
  .arrow {
-    margin-left: 10px;
-    padding-right: 60px;
+    position: absolute;
+    left: 20px;
  }
  .menu-title {
     @include menu-title;
@@ -21,12 +21,21 @@
     justify-content: space-between;
     align-items: center;
     line-height: 1.5em;
- }
+  }
  .last-line p {
-     margin: 0;
+    margin: 0;
+    &:hover {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: inline-block;
+    }
  }
 .meals h4 {
     margin: 0;
+ }
+ .cross i {
+    animation: cross 0.4s ease-in 1.5s both;
  }
  .starter h3, .dish h3, .dessert h3 {
     padding-left: 10px;
