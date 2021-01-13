@@ -79,6 +79,16 @@ body, html {
     opacity: 1;
   }
 }
+@keyframes cross {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
 .main-header h1 {
   text-align: center;
 }
@@ -465,6 +475,10 @@ body, html {
 
 .meals h4 {
   margin: 0;
+}
+
+.cross i {
+  animation: cross 0.4s ease-in 1.5s both;
 }
 
 .starter h3, .dish h3, .dessert h3 {
