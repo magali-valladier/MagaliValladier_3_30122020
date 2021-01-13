@@ -79,16 +79,6 @@ body, html {
     opacity: 1;
   }
 }
-@keyframes cross {
-  0% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
 .main-header h1 {
   text-align: center;
 }
@@ -229,7 +219,6 @@ body, html {
   left: 0;
   pointer-events: none;
   animation: loader 1s ease-in-out 3s forwards;
-  display: none;
 }
 
 .loader-food {
@@ -325,6 +314,7 @@ body, html {
 }
 .cross .fa-check-circle {
   color: #fff;
+  transition: transform 2s ease-in-out 2s;
 }
 
 .line {
@@ -403,7 +393,7 @@ body, html {
   transition: all 0.2ms linear;
 }
 .fill:hover {
-  animation: fill 1.2s ease-in-out;
+  animation: fill 0.3s ease-in-out;
   display: inline-block;
   opacity: 1;
   background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
@@ -447,13 +437,19 @@ body, html {
   box-shadow: 4px 4px 6px #aaa;
   position: relative;
   cursor: pointer;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .meals:hover {
-  padding-right: 70px;
+  padding-right: 75px;
 }
 .meals:hover .cross {
   opacity: 1;
   transform: translate(-50px);
+}
+.meals:hover + .fa-check-circle {
+  transform: rotate(360deg);
 }
 
 .last-line {
@@ -475,10 +471,6 @@ body, html {
 
 .meals h4 {
   margin: 0;
-}
-
-.cross i {
-  animation: cross 0.4s ease-in 1.5s both;
 }
 
 .starter h3, .dish h3, .dessert h3 {
