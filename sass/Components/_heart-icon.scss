@@ -7,7 +7,7 @@
   cursor: pointer;
   transition: all 0.2ms linear;
   &:hover {
-    animation: fill 1.2s ease-in-out;
+    animation: fill 0.3s ease-in-out;
     display: inline-block;
     opacity: 1;
     background:linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
