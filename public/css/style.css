@@ -301,7 +301,7 @@ body, html {
   justify-content: center;
   align-items: center;
   background-color: #99E2D0;
-  width: 60px;
+  width: 50px;
   height: 63px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -314,7 +314,7 @@ body, html {
 }
 .cross .fa-check-circle {
   color: #fff;
-  transition: transform 2s ease-in-out 2s;
+  transition: transform 330ms ease-in-out;
 }
 
 .line {
@@ -448,7 +448,7 @@ body, html {
   opacity: 1;
   transform: translate(-50px);
 }
-.meals:hover + .fa-check-circle {
+.meals:hover .fa-check-circle {
   transform: rotate(360deg);
 }
 
@@ -461,12 +461,9 @@ body, html {
 
 .last-line p {
   margin: 0;
-}
-.last-line p:hover {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  display: inline-block;
 }
 
 .meals h4 {

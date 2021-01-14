@@ -119,10 +119,9 @@
         opacity: 1;
         transform: translate(-50px);
     }
-    &:hover + .fa-check-circle {
-        transform: rotate(360deg);
-     }
-     
+    &:hover .fa-check-circle {
+        transform: rotate(360deg) ;
+    }
 }
 
 @mixin cross {
@@ -130,7 +129,7 @@
     justify-content: center;
     align-items: center;
     background-color: $color-tertiary;
-    width: 60px;
+    width: 50px;
     height: 63px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -142,8 +141,8 @@
     transition: transform 330ms ease-in-out;
     & .fa-check-circle {
         color: #fff;
-        transition: transform 2s ease-in-out 2s;
-    }
+        transition: transform 330ms ease-in-out;
+     }
   }
 @mixin med-screen {
     @media screen and (min-width: map-get($breakpoints, tablet)){
