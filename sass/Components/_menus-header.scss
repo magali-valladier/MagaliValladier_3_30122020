@@ -12,6 +12,9 @@
  }
  .menu-title {
     @include menu-title;
+    @include desktop {
+        padding: 10px 90px;
+    }
 }
 .meals {
     @include meals;
@@ -21,16 +24,16 @@
     justify-content: space-between;
     align-items: center;
     line-height: 1.5em;
-  }
+   }
  .last-line p {
     margin: 0;
-    &:hover {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    display: inline-block;
+    @include desktop {
+        padding-right: 20px;
     }
- }
+}
 .meals h4 {
     margin: 0;
  }
@@ -44,6 +47,9 @@
      margin: 30px 0;
     padding: 20px;
     width: 50%;
+    @include desktop {
+        width: 25%;
+    }
     &:hover {
         opacity: 0.9;
         box-shadow: 4px 4px 6px #000;
