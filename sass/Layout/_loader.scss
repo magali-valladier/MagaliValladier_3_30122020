@@ -15,24 +15,24 @@
     animation: loader 1s ease-in-out 3s forwards;
     
     }
-    .loader-food{
+    .loader__food{
         vertical-align: middle;
         position: absolute;
         top:40%;
         left: 25%;
     }
 
-    .loader-food span{
+    .loader__food span{
     display: inline-block;
     width: 5px;
     height: 20px;
     padding-right: 1em;
    }
-   .loader-fork {
+   .loader__fork {
     vertical-align: middle;
     position: absolute;
     top:50%;
-    left: 45%;
+    left: 50%;
     animation: rotate 1s linear infinite;
 }
   

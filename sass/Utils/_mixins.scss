@@ -141,12 +141,21 @@
     transition: transform 330ms ease-in-out;
     & .fa-check-circle {
         color: #fff;
-        transition: transform 330ms ease-in-out;
-     }
+        transition: transform 500ms ease-in-out;
+    }
   }
-@mixin med-screen {
-    @media screen and (min-width: map-get($breakpoints, tablet)){
-        width: 350px;
-        margin: 0;
+@mixin tablet {
+    @media screen and (min-width:map-get($breakpoints, tablet)){
+        @content;
+    }
+}
+@mixin desktop {
+    @media screen and (min-width:map-get($breakpoints, desktop)){
+        @content;
+    }
+}
+@mixin large {
+    @media screen and (min-width:map-get($breakpoints, large)){
+        @content;
     }
 }

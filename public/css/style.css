@@ -134,7 +134,7 @@ body, html {
   color: #4d4d4d;
 }
 
-.howto-title {
+.howto__title {
   padding-left: 10px;
 }
 
@@ -151,14 +151,45 @@ body, html {
   position: relative;
   right: 10px;
 }
+@media screen and (min-width: 768px) {
+  .number {
+    right: 0;
+    top: -15px;
+  }
+}
 
-.howto-icon i {
+.howto__icon i {
   color: #b2b2b2;
   margin: 0 30px;
 }
 
-.restaurant-title h3 {
+@media screen and (min-width: 768px) {
+  .howto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .howto {
+    padding: 0 20%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .restaurant__title {
+    width: 100%;
+  }
+}
+
+.restaurant__title h3 {
   padding: 30px 0px 0px 10px;
+}
+@media screen and (min-width: 768px) {
+  .restaurant__title h3 {
+    text-align: center;
+  }
 }
 
 .card {
@@ -167,6 +198,11 @@ body, html {
   margin: 20px;
   position: relative;
   background: #fff;
+}
+@media screen and (min-width: 768px) {
+  .card {
+    width: 40%;
+  }
 }
 
 .card img {
@@ -182,6 +218,18 @@ body, html {
   background: #f2f2f2;
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .main-restaurant {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .main-restaurant {
+    padding: 0 20%;
+  }
 }
 
 .heart {
@@ -221,25 +269,25 @@ body, html {
   animation: loader 1s ease-in-out 3s forwards;
 }
 
-.loader-food {
+.loader__food {
   vertical-align: middle;
   position: absolute;
   top: 40%;
   left: 25%;
 }
 
-.loader-food span {
+.loader__food span {
   display: inline-block;
   width: 5px;
   height: 20px;
   padding-right: 1em;
 }
 
-.loader-fork {
+.loader__fork {
   vertical-align: middle;
   position: absolute;
   top: 50%;
-  left: 45%;
+  left: 50%;
   animation: rotate 1s linear infinite;
 }
 
@@ -314,7 +362,7 @@ body, html {
 }
 .cross .fa-check-circle {
   color: #fff;
-  transition: transform 330ms ease-in-out;
+  transition: transform 500ms ease-in-out;
 }
 
 .line {
@@ -360,7 +408,7 @@ body, html {
   box-shadow: 4px 4px 6px #000;
 }
 
-.howto-button {
+.howto__button {
   margin: 0 20px 20px 20px;
   display: flex;
   justify-content: flex-start;
@@ -371,6 +419,14 @@ body, html {
   box-shadow: 4px 4px 6px #fff;
   font-weight: bold;
   box-shadow: 4px 4px 6px #e9e9e9;
+}
+@media screen and (min-width: 768px) {
+  .howto__button {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 .new {
