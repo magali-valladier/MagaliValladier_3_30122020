@@ -5,13 +5,9 @@
     align-items: center;
     box-shadow: inset 0px 5px 5px 0px #dddddd;
 }
-<<<<<<< HEAD
-.maps-search input{
-=======
 .maps__search {
     box-shadow: 10px;
 }
 .maps__search input{
->>>>>>> develop
     @include maps;
 }
