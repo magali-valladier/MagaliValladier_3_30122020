@@ -13,52 +13,56 @@
     left: 0;
     pointer-events: none;
     animation: loader 1s ease-in-out 3s forwards;
-    
+  }
+.loader__food {
+    vertical-align: middle;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    @include tablet {
+      top:40%;
+      left: 35%;
     }
-    .loader__food{
-        vertical-align: middle;
-        position: absolute;
-        top:40%;
-        left: 25%;
+    @include desktop {
+      top: 40%;
+      left: 45%;
     }
-
-    .loader__food span{
+  }
+.loader__food span {
     display: inline-block;
     width: 5px;
     height: 20px;
     padding-right: 1em;
-   }
-   .loader__fork {
+  }
+.loader__fork {
     vertical-align: middle;
     position: absolute;
     top:50%;
     left: 50%;
     animation: rotate 1s linear infinite;
-}
-  
-  .loader-food span:nth-child(1){
+  }
+.loader__food span:nth-child(1) {
     animation: grow 1s ease-in-out infinite;
   }
-  
-  .loader-food span:nth-child(2){
+.loader__food span:nth-child(2) {
     animation: grow 1s ease-in-out 0.15s infinite;
   }
-  .loader-food span:nth-child(3){
+.loader__food span:nth-child(3) {
     animation: grow 1s ease-in-out 0.15s infinite;
   }
-  .loader-food span:nth-child(4){
+.loader__food span:nth-child(4) {
     animation: grow 1s ease-in-out 0.15s infinite;
   }
-  .loader-food span:nth-child(5){
+.loader__food span:nth-child(5) {
     animation: grow 1s ease-in-out 0.15s infinite;
   }
-  .loader-food span:nth-child(6){
+.loader__food span:nth-child(6) {
     animation: grow 1s ease-in-out 0.15s infinite;
   }
-  .loader-food span:nth-child(7){
+.loader__food span:nth-child(7) {
     animation: grow 1s ease-in-out 0.15s infinite;
   }
-  .loader-food span:nth-child(8){
+.loader__food span:nth-child(8) {
     animation: grow 1s ease-in-out 0.15s infinite;
   }
   

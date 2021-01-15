@@ -1,8 +1,8 @@
 
-.main-menu {
+.main__menu {
     @include main-menu;
 }
-.full-menu {
+.full__menu {
     @include desktop {
         display: flex;
         justify-content: space-around;
