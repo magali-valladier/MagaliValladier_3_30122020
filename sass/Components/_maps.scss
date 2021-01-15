@@ -5,9 +5,9 @@
     align-items: center;
     box-shadow: inset 0px 5px 5px 0px #dddddd;
 }
-.maps-search {
+.maps__search {
     box-shadow: 10px;
 }
-.maps-search input{
+.maps__search input{
     @include maps;
 }
