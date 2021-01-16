@@ -1,5 +1,4 @@
 .fill__heart {
-  
   transition: transform 200ms linear;
   }
 .fill {
@@ -13,6 +12,7 @@
     background:linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
     background:-webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color:transparent;
     font-weight: bold;
   }
