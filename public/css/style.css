@@ -423,10 +423,6 @@ body, html {
   box-shadow: inset 0px 5px 5px 0px #dddddd;
 }
 
-.maps__search {
-  box-shadow: 10px;
-}
-
 .maps__search input {
   border: none;
   background: #eaeaea;
