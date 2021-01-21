@@ -1,10 +1,6 @@
-.fill__heart {
-  transition: transform 200ms linear;
-  }
 .fill {
   color: black;
   cursor: pointer;
-  transition: all 0.2ms linear;
   &:hover {
     animation: fill 0.3s ease-in-out;
     display: inline-block;

@@ -257,7 +257,7 @@ body, html {
   padding: 10px;
 }
 
-.heart h5 {
+.heart h4 {
   margin: 0;
   font-size: 1.5rem;
 }
@@ -484,14 +484,9 @@ body, html {
   top: 5%;
 }
 
-.fill__heart {
-  transition: transform 200ms linear;
-}
-
 .fill {
   color: black;
   cursor: pointer;
-  transition: all 0.2ms linear;
 }
 .fill:hover {
   animation: fill 0.3s ease-in-out;
