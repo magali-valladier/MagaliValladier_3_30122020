@@ -34,6 +34,9 @@
         padding-right: 20px;
     }
 }
+.last__line span {
+    margin-right: 5px;
+}
 .meals h4 {
     margin: 0;
  }
@@ -51,7 +54,8 @@
         width: 25%;
     }
     &:hover {
-        opacity: 0.9;
+        background-color: lighten(#9356dc, 10%);
+        background-blend-mode: lighten;
         box-shadow: 4px 4px 6px #000;
     }
  }
