@@ -75,6 +75,9 @@ body, html {
   0% {
     opacity: 0;
   }
+  50% {
+    opacity: 0.5;
+  }
   100% {
     opacity: 1;
   }
@@ -444,7 +447,8 @@ body, html {
   cursor: pointer;
 }
 .btn__about button:hover {
-  opacity: 0.9;
+  background-color: #ae80e5;
+  background-blend-mode: lighten;
   box-shadow: 4px 4px 6px #000;
 }
 
@@ -489,7 +493,7 @@ body, html {
   cursor: pointer;
 }
 .fill:hover {
-  animation: fill 0.3s ease-in-out;
+  animation: fill ease-in-out;
   display: inline-block;
   opacity: 1;
   background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
@@ -540,6 +544,7 @@ body, html {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  transition: padding-right 450ms ease-in-out;
 }
 .meals:hover {
   padding-right: 75px;
